@@ -1,0 +1,49 @@
+.login {
+  width: 460px;
+  height: auto;
+  background-color: lightslategray;
+  margin: auto;
+  justify-content: center;
+  margin-top: 10px;
+}
+h1 {
+  width: 460px;
+  height: 20px;
+  text-align: center;
+}
+label {
+  width: 100px;
+  height: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+input[type="text"] {
+  width: 300px;
+  height: 20px;
+  margin-left: 4px;
+  margin-top: 10px;
+}
+button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 20px;
+  border: none;
+  color: black;
+}
+input[type="date"] {
+  margin-top: 10px;
+}
+input[type="file"] {
+  margin-top: 10px;
+}
+input[type="checkbox"] {
+  margin-top: 10px;
+}
+input[type="radio"] {
+  margin-top: 10px;
+}
+select {
+  margin-top: 10px;
+}

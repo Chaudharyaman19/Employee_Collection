@@ -1,0 +1,152 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <h2>Resturant Record App</h2>
+    <div class="d-flex">
+      <button
+        class="btn btn-success"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Add Resturant
+      </button>
+    </div>
+  </div>
+</nav>
+i am using jumbotron
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Resturant Record Management</h1>
+    <p class="col-md-8 fs-4">
+      You can save Records of Resturant Using Angular 12
+    </p>
+    <button class="btn btn-primary btn-lg" type="button">Jaat</button>
+  </div>
+</div>
+
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">Resturant Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Address</th>
+      <th scope="col">Services</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of allresturantdata">
+      <td>{{ data.id }}</td>
+      <td>{{ data.name }}</td>
+      <td>{{ data.email }}</td>
+      <td>{{ data.address }}</td>
+      <td>{{ data.mobile }}</td>
+      <td>{{ data.services }}</td>
+      <td>
+        <button class="btn btn-info">Edit</button>&nbsp;
+        <button (click)="deleter(data)" class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formvalue">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input
+              type="name"
+              class="form-control"
+              formControlName="name"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Resturant_Name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email_Id</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              formControlName="email"
+              aria-describedby="emailHelp"
+              placeholder="Resturant_Email-Id"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mobile_No</label>
+            <input
+              type="mobile"
+              class="form-control"
+              id="exampleInputEmail1"
+              formControlName="mobile"
+              aria-describedby="emailHelp"
+              placeholder="Resturant_Mobile_No"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Address</label>
+            <input
+              type="address"
+              class="form-control"
+              id="exampleInputEmail1"
+              formControlName="address"
+              aria-describedby="emailHelp"
+              placeholder="Resturant_Address"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Services</label>
+            <input
+              type="services"
+              class="form-control"
+              id="exampleInputEmail1"
+              formControlName="services"
+              aria-describedby="emailHelp"
+              placeholder="Resturant_services"
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary" (click)="addresto()">
+          Add Details
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <div class="col-sm-12 text-center">
+      <div class="input-group mt-5">
+        <input
+          type="text"
+          class="form-control"
+          #userinput
+          placeholder="Enter_City_Name"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-primary ml-2"
+            (click)="getCity(userinput.value)"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+      <h5 class="mt-4" style="color: white">
+        Current weather and Forcast In your City...
+      </h5>
+      <h2 class="mt-4" style="color: white">
+        Weather in {{ weather.name }}.{{ weather.sys.country }}
+      </h2>
+    </div>
+
+    <div class="col-sm-12">
+      <span class="temp" style="color: white">
+        {{ weather.main.temp | number : "1.0-0" }}&#176;F</span
+      >
+
+      <p
+        class="text-uppercase font-italic font-weight-bold"
+        style="color: white"
+      >
+        {{ weather.weather[0].description }}
+      </p>
+    </div>
+
+    <table class="table-light table-striped table-bordered table-sm">
+      <tbody>
+        <tr>
+          <td>Humidity</td>
+          <td>{{ weather.main.humidity }}%</td>
+        </tr>
+        <tr>
+          <td>pressure</td>
+          <td>{{ weather.main.pressure }}</td>
+        </tr>
+        <tr>
+          <td>Sunrise</td>
+          <td>{{ weather.sys.sunrise * 1000 | date : "H:mm" }}</td>
+        </tr>
+        <tr>
+          <td>Sunset</td>
+          <td>{{ weather.sys.sunset * 1000 | date : "H:mm" }}</td>
+        </tr>
+        <tr>
+          <td>Geo Coords</td>
+          <td>{{ weather.coord.lat }},{{ weather.coord.lon }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

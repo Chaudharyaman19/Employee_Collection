@@ -1,0 +1,225 @@
+<!--<h2>i am component</h2>
+<button type="">click</button>
+
+<app-viewincapsulationtest1></app-viewincapsulationtest1>
+<app-viewincapluation2></app-viewincapluation2>
+<app-shadow></app-shadow>
+<app-shadow2></app-shadow2>
+<h2>Example of Component Directive</h2>
+<button type="" (click)="me()">click Me</button>
+<h2>Example of structured Directive</h2>
+<div *ngIf="show">hellow bhi kase ho app</div><
+
+<h2 [ngStyle]="{ color: 'red', 'font-weight': 'bold' }">Hiiiiiiii</h2>
+<h2 [ngStyle]="{ color: 'yellow', 'font-weight': 'bold' }">Hiiiiiiii</h2>
+-->
+<!--<h2 [ngStyle]="{ color: 'red', 'font-weight': 'bold' }">Hiiiiiiii</h2>
+<h2 [ngStyle]="{ color: 'yellow', 'font-weight': 'bold' }">Hiiiiiiii</h2>
+<font
+  ><p [ngStyle]="{ color: 'blue', 'font-weight': 'bold' }">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores saepe
+    nisi neque unde eius similique, facilis laboriosam alias beatae quaerat qui?
+    Officia hic placeat facilis dignissimos omnis molestias praesentium tenetur!
+  </p></font
+>
+<font [ngStyle]="{ color: 'red' }"
+  ><p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis
+    iste dolore obcaecati aliquid consequatur rerum, culpa cum hic maxime,
+    aliquam omnis assumenda, quo beatae veniam odio accusantium excepturi
+    perspiciatis.
+  </p></font
+>
+<button type="" (click)="me()" [ngStyle]="{ 'background-color': 'green' }">
+  Hii 😊😊😊😊😊😊
+</button>
+<h2 appRedcolorel>yes Mam👍👍👍👍👍👍👍</h2>
+<h4>You are too Good</h4>
+<h5>You are too bad</h5>
+<h4>You are too Good</h4>
+<h5>You are too bad</h5>
+-->
+<!--<h2>Hi bro Kase hoo app</h2>
+<h3>Hello Bhai</h3>
+<h4>
+  date:{{ datetoday }}<br />
+  date pipe:{{ datetoday | uppercase }} <br />
+  date pipe:{{ datetoday | date : "short" | lowercase }} <br />
+  name:{{ name | lowercase }} <br
+  name:{{ name | uppercase }} <br />
+  name:{{ name | slice : 6 }}
+</h4>
+<table border="1">
+  <thead>
+    <tr>
+      <th>student name</th>
+      <th>student id</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let x of student">
+    <td>{{ x.name }}</td>
+    <td>{{ x.id }}</td>
+  </tr>
+</table>
+<h2>i am {{ birthday | custompipe }} years old</h2>-->
+<!--<h1>{{ title }}</h1>
+<form [formGroup]="loginform" (ngSubmit)="loginUser()">
+  <input
+    type="text"
+    placeholder="Enter_Name"
+    name="user"
+    formControlName="user"
+  />
+  <br /><br />
+  <span style="color: red" *ngIf="user && user.invalid && user.touched"
+    >User name required</span
+  >
+  <br />
+  <br />
+  <input
+    type="text"
+    placeholder="Enter_Password"
+    name="password"
+    formControlName="password"
+  />
+  <br /><br />
+  <span
+    style="color: red"
+    *ngIf="password && password.invalid && password.touched"
+  >
+    name required</span
+  >
+  <button>Login</button>
+</form>
+<div class="form">
+  <h1>Template Programing</h1>
+  <form #example="ngForm" (ngSubmit)="onclicksubmit(example.value)">
+    <input
+      type="text"
+      id="user"
+      name="user"
+      placeholder="User_Name"
+      required
+      email
+      minlength="6"
+      #user="ngModel"
+      ngModel
+    />
+    <br />
+    <div *ngIf="user.errors?.['required']" style="color: red">
+      Plese Enter User Name
+    </div>
+    <div *ngIf="user.errors?.['minlength']" style="color: red">
+      User must be 6 character
+    </div>
+
+    <br />
+    <input
+      type="text"
+      id="password"
+      name="password"
+      placeholder="password"
+      required
+      email
+      minlength="6"
+      #password="ngModel"
+      ngModel
+    />
+    <br />
+    <div *ngIf="password.errors?.['required']" style="color: red">
+      plese Enter your password
+    </div>
+    <div *ngIf="password.errors?.['minlength']" style="color: red">
+      password must be 6 character
+    </div>
+    <br />
+
+    <input
+      type="text"
+      id="email"
+      name="email"
+      placeholder="email"
+      required
+      email
+      minlength="6"
+      #email="ngModel"
+      ngModel
+    />
+    <br />
+    <div *ngIf="email.errors?.['required']" style="color: red">
+      plese Enter your Email
+    </div>
+    <div *ngIf="email.errors?.['minlength']" style="color: red">
+      password must be 6 character
+    </div>
+    <br />
+
+    <input
+      type="text"
+      id="phone"
+      name="phone"
+      placeholder="phone_Number"
+      required
+      email
+      minlength="10"
+      #phone="ngModel"
+      ngModel
+    />
+    <br />
+
+    <div *ngIf="phone.errors?.['required']" style="color: red">
+      plese Enter your Phone_Number
+    </div>
+    <div *ngIf="phone.errors?.['minlength']" style="color: red">
+      phone_number must be 10 Digit
+    </div>
+    <div *ngIf="phone. errors?.['minlength'] >10">
+      Plese Enter a Valid Phone NUmber
+    </div>
+    <br />
+    <h2 class="text" id="select" name="select" #select="ngModel" ngModel>
+      Choose Country
+    </h2>
+    <select name="" id="" class="ch" #select="ngModel" ngModel>
+      <option value="">--select--</option>
+      <option value="">india</option>
+      <option value="">Pakistan</option>
+    </select>
+
+    <br />
+
+    <div *ngIf="select.errors?.['required']" style="color: red">
+      plese choose your country
+    </div>
+    <br />
+
+    <div class="form-group">
+      <label for="gender">gender</label>
+      <div class="form-control">
+        <input
+          type="radio"
+          name="gender"
+          value="male"
+          checked
+          [(ngModel)]="gender"
+        />male
+        <input
+          type="radio"
+          name="gender"
+          value="female"
+          [(ngModel)]="gender"
+        />female
+      </div>
+    </div>
+
+    <button class="" type="submit" value="submit">Submit</button>
+    <button class="btn" type="reset" value="reset">Reset</button>
+  </form>
+</div>
+-->
+<!--<app-portfolio></app-portfolio>-->
+<!--<h1>Router Example with paramters</h1>
+<p><a href="" routerLink="usr">go to user Page</a></p>-->
+
+<app-springproj></app-springproj>
+<router-outlet></router-outlet>

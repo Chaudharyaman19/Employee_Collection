@@ -1,0 +1,27 @@
+<div class="weathermain">
+  <div class="weatherow" *ngIf="weatherdata.isDay">
+    <i class="fas fa-3x fa-sun sun"></i>
+  </div>
+  <div class="weatherow" *ngIf="!weatherdata.isDay">
+    <i class="fas fa-3x fa-moon moon"></i>
+  </div>
+  <div class="weatherow cloud" *ngIf="!weatherdata.isDay">
+    <i class="fas fa-cloud fa-3x cloud"></i>
+  </div>
+
+  <div class="weatherow" style="font-size: 32px; margin-top: 5px">
+    {{ weatherdata.temp_celcius }}
+  </div>
+  <div class="weatherow" style="font-size: 18px">
+    {{ weatherdata.temp_max }} / {{ weatherdata.temp_min }}
+  </div>
+  <div class="weatherow" style="font-size: 18px">
+    Feels_like_temp {{ weatherdata.temp_feels_like }}
+  </div>
+  <div class="weatherow" style="font-size: 25px; margin-top: 10px">
+    {{ weatherdata.name }}
+  </div>
+  <div class="weatherow" style="font-size: 18px">
+    Humidity {{ weatherdata.main.humidity }}%
+  </div>
+</div>

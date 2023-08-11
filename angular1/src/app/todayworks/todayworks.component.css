@@ -1,0 +1,28 @@
+.row {
+  height: 700px;
+  background-image: url(https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+.moon {
+  color: white;
+  filter: drop-shadow(1px 1px 10px white);
+}
+.cloud {
+  margin-top: 20px;
+}
+.cloud {
+  color: rgba(104, 175, 197);
+  filter: drop-shadow(1px 1px 5px rgba(104, 175, 175));
+  animation-name: cloudmovement;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes cloudmovement {
+  from {
+    margin-left: 15px;
+  }
+  to {
+    margin-left: 65px;
+  }
+}

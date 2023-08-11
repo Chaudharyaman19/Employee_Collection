@@ -1,0 +1,91 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "name": "aman",
+      "email": "sjkd",
+      "mobile": "9029023",
+      "address": "sdlsdla",
+      "services": "jlsda"
+    },
+    {
+      "id": 3,
+      "name": "ahj",
+      "email": "hb",
+      "mobile": null,
+      "address": null,
+      "services": null
+    },
+    {
+      "id": 4,
+      "name": "asad",
+      "email": "dasd",
+      "mobile": "",
+      "address": "",
+      "services": ""
+    },
+    {
+      "id": 5,
+      "name": "sdas",
+      "email": "sad",
+      "mobile": "",
+      "address": "",
+      "services": ""
+    },
+    {
+      "id": 6,
+      "name": "cv",
+      "email": "dfg",
+      "mobile": "",
+      "address": "",
+      "services": ""
+    },
+    {
+      "id": 7,
+      "name": "ds",
+      "email": "sad",
+      "mobile": "",
+      "address": "",
+      "services": ""
+    },
+    {
+      "id": 8,
+      "name": "dsz",
+      "email": "sdf",
+      "mobile": "",
+      "address": "",
+      "services": ""
+    },
+    {
+      "id": 9,
+      "name": ",sd",
+      "email": "",
+      "mobile": "",
+      "address": "",
+      "services": ""
+    },
+    {
+      "id": 10,
+      "name": "aman",
+      "email": "",
+      "mobile": "",
+      "address": "",
+      "services": ""
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

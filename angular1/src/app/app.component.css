@@ -1,0 +1,40 @@
+.form {
+  width: 500px;
+  height: auto;
+  justify-content: center;
+  margin: auto;
+}
+button {
+  background-color: rgb(83, 150, 57);
+  border: none;
+  margin-top: 8px;
+  height: 40px;
+  width: 80px;
+  border-radius: 50px;
+  margin-left: 40px;
+}
+input[type="text"] {
+  width: 500px;
+  height: 40px;
+}
+h1 {
+  text-align: center;
+}
+.btn {
+  margin-left: 200px;
+  height: 40px;
+  width: 80px;
+  margin-top: -1px;
+}
+.ch {
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+  font-style: none;
+  border: none;
+}
+.text {
+  font-style: none;
+  font: none;
+  font-weight: initial;
+}
